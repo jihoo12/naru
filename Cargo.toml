@@ -1,0 +1,12 @@
+[package]
+name = "naruwm"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0 AND MIT"
+description = "The beginnings of the naru desktop: a nested Wayland compositor"
+
+[dependencies]
+smithay = { version = "=0.7.0", default-features = false, features = ["backend_winit", "wayland_frontend", "desktop"] }
+bitflags = "2.9"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
